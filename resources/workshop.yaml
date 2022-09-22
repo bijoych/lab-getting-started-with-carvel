@@ -1,21 +1,20 @@
-apiVersion: training.eduk8s.io/v1alpha2
+apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: Workshop
 metadata:
-  name: lab-getting-started-with-carvel
+  name: carvel-workshop
 spec:
   title: Getting started with Carvel
-  description: Introducing Carvel, Simple and Composable Tools for Application Deployment
-  vendor: eduk8s.io
-  authors:
-  - eduk8s team
+  description: This workshop guides you through working with Carvel simple and composable tools for application deployment.
+  vendor: tanzu.vmware.com
   difficulty: beginner
-  duration: 60m
+  duration: 120m
   tags:
   - tools
   - development
-  url: https://github.com/eduk8s-labs/lab-getting-started-with-carvel
+  url: https://github.com/bijoych/lab-getting-started-with-carvel
   content:
-    files: github.com/eduk8s-labs/lab-getting-started-with-carvel
+    image: gcr.io/cso-education-bchoudhury/carvel-workshop@sha256:e7da661e36b7b2d2b2947ffb344b8f3d198732ab7ef812722a295abbb514da65
+    files: "github.com/bijoych/lab-getting-started-with-carvel?ref=master"
   session:
     budget: small
     resources:
@@ -32,3 +31,5 @@ spec:
         enabled: true
       docker:
         enabled: true
+
+

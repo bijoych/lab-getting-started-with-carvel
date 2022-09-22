@@ -1,11 +1,16 @@
-apiVersion: training.eduk8s.io/v1alpha1
+apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: TrainingPortal
 metadata:
-  name: lab-getting-started-with-carvel
+  name: carvel-workshop
 spec:
+  portal:
+    registration:
+      type: anonymous
+    updates:
+      workshop: true
   workshops:
-  - name: lab-getting-started-with-carvel
-    capacity: 1
-    reserved: 1
-    expires: 60m
-    orphaned: 5m
+  - name: calatrava-tap-workshop
+    reserved: 0
+    capacity: 20
+    expires: 120m
+    orphaned: 30m
