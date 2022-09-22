@@ -9,7 +9,7 @@ spec:
     updates:
       workshop: true
   workshops:
-  - name: calatrava-tap-workshop
+  - name: carvel-workshop
     reserved: 0
     capacity: 20
     expires: 120m
