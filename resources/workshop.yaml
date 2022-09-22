@@ -3,14 +3,11 @@ kind: Workshop
 metadata:
   name: carvel-workshop
 spec:
+  vendor: learningcenter.tanzu.vmware.com
   title: Getting started with Carvel
   description: This workshop guides you through working with Carvel simple and composable tools for application deployment.
-  vendor: tanzu.vmware.com
   difficulty: beginner
   duration: 120m
-  tags:
-  - tools
-  - development
   url: https://github.com/bijoych/lab-getting-started-with-carvel
   content:
     image: gcr.io/cso-education-bchoudhury/carvel-workshop@sha256:e7da661e36b7b2d2b2947ffb344b8f3d198732ab7ef812722a295abbb514da65
@@ -31,5 +28,6 @@ spec:
         enabled: true
       docker:
         enabled: true
+
 
 
